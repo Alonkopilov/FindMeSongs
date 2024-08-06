@@ -4,13 +4,14 @@
     import Logo from "../components/logo.svelte"
     import Song from "../components/song.svelte";
 
-    var API_IP = "127.0.0.1"
-    var API_PORT = 8000
+    var API_IP = "0.0.0.0"
+    var API_PORT = 4000
     var BACKEND_API_URL = `http://${API_IP}:${API_PORT}`
     var SPOTIFY_API_URL = `https://accounts.spotify.com`
 
     // Search Related Functions
     async function fetchSongs(query) {
+        console.log(`THIS = ${API_IP}, ${API_PORT}`)
         var findMeSongsApiEndpoint = `${BACKEND_API_URL}/search`
         try {
             const params = new URLSearchParams({
