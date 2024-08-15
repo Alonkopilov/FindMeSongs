@@ -4,7 +4,7 @@
     import Logo from "../components/logo.svelte"
     import Song from "../components/song.svelte";
 
-    var API_IP = "0.0.0.0"
+    var API_IP = "localhost"
     var API_PORT = 4000
     var BACKEND_API_URL = `http://${API_IP}:${API_PORT}`
     var SPOTIFY_API_URL = `https://accounts.spotify.com`
